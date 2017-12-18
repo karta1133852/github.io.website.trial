@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { padding: 0; margin: 0; }
+li { list-style: none; }
+body {
+  background-image: url('http://s3.amazonaws.com/caself/products/photos/000/000/729/original/lil_fiber.png?1504852479');
+  background-repeat:repeat;
+  font-family: arial;
+}
+
+@font-face {
+  font-family: seto;
+  src: url(../fonts/setofont_edited.ttf);
+}
+
+.engMonth { font-family: seto, serif; }
+
+.calendar {
+  width: 282px; margin: 0 0 0 0;
+  padding: 10px 10px 20px 20px; background: #eae9e9;
+}
+.calendar ul {
+  width: 282px; overflow: hidden; padding-bottom: 10px;
+}
+.calendar li {
+  float: left; width: 58px; height: 54px; margin: 10px 10px 0 0;
+  border: 1px solid #fff; background: #424242; color: #fff;
+  text-align: center; cursor: pointer;
+}
+.calendar li:hover {
+  float: left; width: 58px; height: 54px; margin: 10px 10px 0 0;
+  border: 1px solid #fff; background: #fff; color: #424242;
+  text-align: center; cursor: pointer;
+}
+.calendar li h2 { font-size: 20px; padding-top: 5px; }
+.calendar li p { font-size: 17px; }
+
+.calendar .active {
+  border: 1px solid #424242;
+  background: #fff;
+  color: #FFA600;
+}
+.calendar .active h2 { }
+.calendar .active p { font-weight: bold; }
+
+.calendar .text {
+  width: 248px; padding: 0 10px 10px; border: 1px solid #fff;
+  padding-top: 10px; background: #f1f1f1; color: #555;
+}
+.calendar .text h2 { font-size: 20px; margin-bottom: 10px; }
+.calendar .text p { font-size: 14px; line-height:18px; }
